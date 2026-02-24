@@ -1,1 +1,38 @@
-﻿
+﻿<form asp-controller="GabrielPromedio" asp-action="Index" method="POST">
+
+
+    <div class="contenedor">
+        <div class="campo">
+            <label for="num1">Nota 1</label>
+            <input type="text" name="num1" id="num1" value="@(ViewBag.Num1 ?? "")" required>
+        </div>
+
+        <div class="campo">
+            <label for="num2">Nota 2</label>
+            <input type="text" name="num2" id="num2" value="@(ViewBag.Num2 ?? "")" required>
+        </div>
+
+        <div class="campo">
+            <label for="num3">Nota 3</label>
+            <input type="text" name="num3" id="num3" value="@(ViewBag.Num3 ?? "")" required>
+        </div>
+
+        <div class="campo">
+            <label for="num4">Nota 4</label>
+            <input type="text" name="num4" id="num4" value="@(ViewBag.Num4 ?? "")" required>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="acciones">
+        <button class="btn" type="submit">Calcular</button>
+        <button class="btn" type="button" id="btnLimpiar">Limpiar</button>
+    </div>
+
+    <div class="promedio">
+        <label for="prom">Promedio</label>
+        <input id="prom" type="text" disabled readonly value="@(ViewBag.Promedio ?? "")" />
+    </div>
+
+</form>

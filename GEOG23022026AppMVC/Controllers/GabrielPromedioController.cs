@@ -15,6 +15,10 @@ namespace GEOG23022026AppMVC.Controllers
         {
             double promedio = (num1 + num2 + num3 + num4) / 4;
             ViewBag.Promedio = promedio;
+            ViewBag.Num1 = num1;
+            ViewBag.Num2 = num2;
+            ViewBag.Num3 = num3;
+            ViewBag.Num4 = num4;
             return View();
         }
     }

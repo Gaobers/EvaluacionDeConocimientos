@@ -142,4 +142,16 @@
         <input id="prom" type="text" disabled readonly value="@(ViewBag.Promedio ?? "")" />
     </div>
 
+    <script>
+            document.getElementById("btnLimpiar").addEventListener("click", function () {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("num3").value = "";
+            document.getElementById("num4").value = "";
+            document.getElementById("prom").value = "";
+
+            document.getElementById("num1").focus();
+            });
+    </script>
+
 </form>
